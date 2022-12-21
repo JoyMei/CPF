@@ -87,7 +87,7 @@ $ python scripts/run_demo.py \
   <img src="docs/teaser_fitting.gif", width="40%"><br/>Press q in the "runtime hand" window to start fitting
 </p>
 <p align="center">
-    
+
 </p>
 
 ### visualize A-MANO'S anchor position
@@ -117,6 +117,9 @@ $ export GPU_ID=0,1,2,3 && sh ./scripts/fit_GeO_handobj_FHB.sh
 ```
 ### HO3Dv1
 dump the results of HoNet and PiCR:
+
+转储 HoNet 和 PiCR 的结果：
+
 ```shell
 # recommend 2 GPUs
 $ export GPU_ID=0,1 && sh ./scripts/dump_HoNetPiCR_HO3Dv1.sh
