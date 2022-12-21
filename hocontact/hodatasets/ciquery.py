@@ -25,11 +25,12 @@ class CIAdaptQueries(Enum):
     OBJ_VOXEL_POINTS = auto()
     OBJ_VOXEL_EL_VOL = auto()
     HAND_PALM_VERT_IDX = auto()
-    VERTEX_CONTACT = auto()  # NEW: for each vertex, whether it is in contact with hand
-    CONTACT_REGION_ID = auto()  # NEW: returns region id [[ NOTE ITS INTERACTION WITH PADDING ]]
+    VERTEX_CONTACT = auto()  # NEW: for each vertex, whether it is in contact with hand-对于每个顶点，是否与手接触
+    CONTACT_REGION_ID = auto()  # NEW: returns region id [[ NOTE ITS INTERACTION WITH PADDING 注意它与padding的交互]]
     CONTACT_ANCHOR_ID = auto()  # NEW: returns anchor id [[ NOTE ITS INTERACTION WITH PADDING ]]
-    CONTACT_ANCHOR_ELASTI = auto()  # NEW: returns anchor elasti [[ NOTE ITS INTERACTION WITH PADDING ]]
-    CONTACT_ANCHOR_PADDING_MASK = auto()  # NEW: if padding enabled, this field will be append to the query
+    CONTACT_ANCHOR_ELASTI = auto()  # NEW: returns anchor elasti [[ NOTE ITS INTERACTION WITH PADDING ]]-返回弹性锚
+    CONTACT_ANCHOR_PADDING_MASK = auto()  # NEW: if padding enabled, this field will be append to the query-如果启用padding，该字段将附加到查询
+
 
 
 class CIDumpedQueries(Enum):
